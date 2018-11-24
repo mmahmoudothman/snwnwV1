@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <com.snwnw.snwnw.presentation.ui.views.English_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOOK STORE "
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_below="@+id/cover"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_40"
+                android:textColor="@color/lila"
+                android:textSize="@dimen/text_size_16"
+                android:id="@+id/place_name"
+                />
+        <com.snwnw.snwnw.presentation.ui.views.English_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 ميل"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_below="@+id/place_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/place_distance"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/place_distance"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:background="@color/lila"
+            android:layout_marginTop="@dimen/margin_10"
+            android:id="@+id/line1"
+            />
+        <LinearLayout
+            android:id="@+id/details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line1"
+            >
+        <include layout="@layout/place_times_row"></include>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rating_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_layout"
+            >
+            <include layout="@layout/place_rating_row"></include>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/comments_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_layout"
+            >
+            <include layout="@layout/place_comments_row"></include>
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

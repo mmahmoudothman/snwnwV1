@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_50"
+    android:background="@color/colorPrimary">
+
+    <com.snwnw.snwnw.presentation.ui.views.English_EditText
+        android:id="@+id/header_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:hint="@string/searchfor"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14"
+        android:layout_toLeftOf="@+id/menu_btn"
+        android:layout_toRightOf="@+id/notify_icon"
+        android:background="@drawable/round_colored_bg"
+        android:layout_margin="@dimen/margin_10"
+        android:padding="@dimen/margin_5"
+        android:drawableRight="@android:drawable/ic_menu_search"
+
+        />
+
+    <ImageView
+        android:id="@+id/menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_menu_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_20"
+        />
+
+    <ImageView
+        android:id="@+id/notify_icon"
+        android:layout_width="@dimen/margin_30"
+        android:layout_height="@dimen/margin_30"
+        android:layout_centerVertical="true"
+        android:src="@drawable/mini_logo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        />
+</RelativeLayout>

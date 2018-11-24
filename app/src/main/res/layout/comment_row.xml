@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_10"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/margin_80"
+            android:layout_height="@dimen/margin_80"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/profile_defalut"
+            android:id="@+id/item_img"
+            android:layout_marginLeft="@dimen/margin_20"
+            />
+
+        <com.snwnw.snwnw.presentation.ui.views.English_Textview
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/item_img"
+            android:gravity="right"
+            android:text="العنوان"
+            android:textColor="@color/lila"
+            android:textSize="@dimen/text_size_16" />
+        <com.snwnw.snwnw.presentation.ui.views.English_Textview
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="العنوان"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/text_size_16"
+            android:layout_below="@+id/address"
+            android:layout_alignRight="@+id/address"
+            />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

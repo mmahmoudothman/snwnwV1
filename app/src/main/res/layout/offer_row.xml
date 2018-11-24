@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/margin_60"
+        android:layout_height="@dimen/margin_60"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/logo_preview"
+        android:layout_margin="@dimen/margin_10"
+        />
+    <com.snwnw.snwnw.presentation.ui.views.English_Textview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lila"
+        android:textSize="@dimen/text_size_20"
+        android:textStyle="bold"
+        android:id="@+id/msg_txt"
+        android:layout_toLeftOf="@+id/logo"
+        android:text="glgglgglglg0"
+        android:gravity="right"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        />
+    <com.snwnw.snwnw.presentation.ui.views.English_Textview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_20"
+        android:textStyle="bold"
+        android:id="@+id/msg_period"
+        android:text="glgglgglglg0"
+        android:gravity="right"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_below="@+id/msg_txt"
+        android:layout_alignRight="@+id/msg_txt"
+        />
+</RelativeLayout>

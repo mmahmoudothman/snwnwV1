@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/toolbar"></include>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_layout"
+            android:fillViewport="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.snwnw.snwnw.presentation.ui.views.English_Textview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:gravity="center_horizontal"
+                    android:text="@string/reset_password"
+                    android:textColor="@color/lila"
+                    android:textSize="@dimen/text_size_26"
+                    android:textStyle="bold"
+                    android:id="@+id/headtxt"
+                    />
+
+                <com.snwnw.snwnw.presentation.ui.views.English_Textview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_50"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="@string/enter_code"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/headtxt"
+                    android:id="@+id/enter_code"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_40"
+                    />
+                <com.snwnw.snwnw.presentation.ui.views.English_EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/enter_your_code"
+                    android:gravity="center"
+                    android:layout_below="@+id/enter_code"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/round_edit_txt"
+
+                    />
+                <com.snwnw.snwnw.presentation.ui.views.English_Textview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="@string/new_password"
+                    android:id="@+id/confirmatiron_code"
+                    android:layout_below="@+id/enter_your_code"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_40"
+                    />
+                <LinearLayout
+                    android:id="@+id/new_pass_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_below="@+id/confirmatiron_code"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true"
+                        >
+                        <com.snwnw.snwnw.presentation.ui.views.English_EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_margin="@dimen/margin_5"
+                            android:id="@+id/enter_your_passwrod"
+                            android:gravity="center"
+                            android:inputType="textPassword"
+                            android:background="@drawable/round_edit_txt"
+
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.snwnw.snwnw.presentation.ui.views.English_Textview
+                    android:id="@+id/reset_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/enter_code"
+                    android:layout_below="@+id/new_pass_layout"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/new_password_confirm"
+                    android:textSize="@dimen/text_size_16" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:orientation="horizontal"
+                    android:id="@+id/reset_password_layouy"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_below="@+id/reset_password"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true"
+                        >
+                        <com.snwnw.snwnw.presentation.ui.views.English_EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/round_edit_txt"
+                            android:layout_margin="@dimen/margin_5"
+                            android:id="@+id/ed_repeat_password"
+                            android:gravity="center"
+                            android:inputType="textPassword"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.snwnw.snwnw.presentation.ui.views.English_Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@color/white"
+                    android:text="@string/submit"
+                    android:textSize="@dimen/margin_16"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn_bg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/margin_60"
+                    android:id="@+id/confirm"
+                    android:layout_marginRight="@dimen/margin_40"
+                    android:layout_marginLeft="@dimen/margin_40"
+                    />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.snwnw.snwnw">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+        tools:replace="android:icon">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".presentation.ui.activities.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.ui.activities.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".presentation.ui.activities.registerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".presentation.ui.activities.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity
+            android:name=".presentation.ui.activities.menuActivity"
+            android:theme="@style/mAppTheme" />
+        <activity
+            android:name=".presentation.ui.activities.testAcitivty"
+            android:label="@string/title_activity_test_acitivty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".presentation.ui.activities.filterActivity" />
+        <activity android:name=".presentation.ui.activities.subCategoriesActivity" />
+        <activity android:name=".presentation.ui.activities.homeActivityTest" />
+        <activity android:name=".presentation.ui.activities.InternalLoginActivity" />
+        <activity android:name=".presentation.ui.activities.registerCodeActivity" />
+        <activity android:name=".presentation.ui.activities.forgetpasswordActivity" />
+        <activity android:name=".presentation.ui.activities.settingActivity" />
+        <activity android:name=".presentation.ui.activities.feedbackActivity" />
+        <activity android:name=".presentation.ui.activities.FQAActivity" />
+        <activity android:name=".presentation.ui.activities.CodeForgetPasswordActivity" />
+        <activity android:name=".presentation.ui.activities.updatePasswordActivity" />
+        <activity android:name=".presentation.ui.fragments.addFragment" />
+        <activity android:name=".presentation.ui.profilePackage.myDataActivity" />
+        <activity android:name=".presentation.ui.activities.myFavActivity" />
+        <activity android:name=".presentation.ui.activities.subFavActivity" />
+        <activity android:name=".presentation.ui.activities.editPasswordActivity" />
+        <activity android:name=".presentation.ui.fragments.placeDetailsFragment" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBgSe6qSNa9Jvr44cZ2t-VfOjqiIsZm_lU" />
+
+        <!--AIzaSyBS_qDy6yYTXlOhT9VKf9HSLlOYuxvRo1Q-->
+        <!---->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <!-- <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="270608247070244"/> -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <service
+            android:name=".presentation.FCN.MyFCMService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- ###  Register service get token and send it to service  ### -->
+        <service android:name=".presentation.FCN.FCMRegistrationService" />
+
+        <!-- ###  Service response to token refresh event  ### -->
+        <service
+            android:name=".presentation.FCN.FCMTokenRefreshListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".presentation.ui.activities.AddEventActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+
+
+    </application>
+
+
+</manifest>

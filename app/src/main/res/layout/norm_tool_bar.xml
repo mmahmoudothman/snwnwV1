@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_50"
+    android:background="@color/lila"
+    >
+    <ImageView
+        android:layout_width="@dimen/margin_40"
+        android:layout_height="@dimen/margin_40"
+        android:src="@drawable/mini_logo"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/margin_5"
+        />
+    <com.snwnw.snwnw.presentation.ui.views.English_Textview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/nav_icon"
+        android:id="@+id/btn_register"
+        />
+    <ImageView
+        android:id="@+id/nav_icon"
+        android:layout_width="@dimen/margin_40"
+        android:layout_height="@dimen/margin_40"
+        android:padding="@dimen/margin_10"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nav_right"
+        />
+</RelativeLayout>

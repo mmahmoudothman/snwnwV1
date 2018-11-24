@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="@dimen/margin_80"
+    android:layout_height="@dimen/margin_120"
+    android:id="@+id/allview"
+    >
+    <ImageView
+        android:layout_width="@dimen/margin_70"
+        android:layout_height="@dimen/margin_70"
+        android:src="@drawable/home"
+        />
+    <com.snwnw.snwnw.presentation.ui.views.English_Textview
+
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text ="مطاعم"
+        />
+
+</LinearLayout>

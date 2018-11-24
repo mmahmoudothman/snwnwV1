@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#342965</color>
+    <color name="colorPrimaryDark">#342965</color>
+    <color name="colorAccent">#67A76B</color>
+    <color name="lila">#5E3C6A</color>
+    <color name="light_lila">#EAEAEA</color>
+    <color name="op_white">#BFFFFFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_grey">#676767</color>
+    <color name="blue_color">#342965</color>
+
+
+    <color name="color1">#342965</color>
+    <color name="color2">#5B2966</color>
+
+    <color name="selected">#F78E1E</color>
+
+    <color name="google_new">#EA4335</color>
+
+</resources>

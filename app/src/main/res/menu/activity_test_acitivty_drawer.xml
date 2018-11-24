@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/calendar"
+            android:title="@string/evend_add"
+            android:visible="true"
+            />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/plus_box"
+            android:title="@string/side_add"
+            />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/history"
+            android:title="@string/side_search" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/home_plus"
+            android:title="@string/side_my_places"
+            android:actionLayout="@layout/layout_menu_save"
+            />
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/side_fav" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_quest"
+                android:icon="@drawable/help"
+                android:title="@string/side_quest" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/message_alert"
+                android:title="@string/side_feedback" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/account_plus"
+                android:title="@string/side_share" />
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/settings"
+                android:title="@string/side_settings" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/logout_variant"
+                android:title="@string/side_exit" />
+        </menu>
+    </item>
+</menu>

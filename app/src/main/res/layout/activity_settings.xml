@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/toolbar"></include>
+    </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingRight="@dimen/margin_20"
+        >
+        <com.snwnw.snwnw.presentation.ui.views.English_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_30"
+            android:text="@string/side_settings"
+            android:textColor="@color/lila"
+            android:textSize="@dimen/text_size_26"
+            android:textStyle="bold"
+            android:id="@+id/headtxt"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:id="@+id/lang_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headtxt"
+            >
+            <include layout="@layout/language"></include>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/notifcation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lang_layout">
+            <include layout="@layout/notification"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/privacy_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notifcation_layout"
+            >
+            <include layout="@layout/privacypolicy"></include>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/confirmation_code_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/privacy_layout"
+            android:visibility="gone"
+            >
+            <include layout="@layout/code_layout"></include>
+        </LinearLayout>
+    </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.snwnw.snwnw.presentation.ui.views.English_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="العنوان"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_below="@+id/line1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textColor="@color/lila"
+            android:textSize="@dimen/text_size_16"
+            android:id="@+id/address"
+            />
+        <com.snwnw.snwnw.presentation.ui.views.English_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_below="@+id/address"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/address_details"
+            />
+        <com.snwnw.snwnw.presentation.ui.views.English_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ساعات العمل"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_below="@+id/address_details"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textColor="@color/lila"
+            android:textSize="@dimen/text_size_16"
+            android:id="@+id/address_times"
+            />
+        <com.snwnw.snwnw.presentation.ui.views.English_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_below="@+id/address_times"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/address_details_times"
+            />
+        <com.snwnw.snwnw.presentation.ui.views.English_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_below="@+id/address_details_times"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textColor="@color/lila"
+            android:textSize="@dimen/text_size_16"
+            android:id="@+id/place_phone"
+            />
+        <com.snwnw.snwnw.presentation.ui.views.English_Textview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_below="@+id/place_phone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/place_phone_details"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lila"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_below="@+id/place_phone_details"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_20"
+
+            />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

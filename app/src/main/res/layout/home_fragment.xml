@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map__"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:layout_margin="@dimen/margin_20"
+            android:background="@drawable/round_bg"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+                android:id="@+id/places_autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/place_autocomplete_fragment"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@null"
+                android:drawableRight="@android:drawable/ic_menu_search"
+                android:hint="@string/searchfor"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:textColorHint="@color/lila"
+                android:visibility="gone"
+                app:pacv_googleMapsApiKey="AIzaSyC97r2CkllgQuM1McJNXN-kh7OZ4DQrenA" />
+
+            <!--
+        <com.snwnw.snwnw.presentation.ui.views.English_EditText
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/searchfor"
+            android:textColorHint="@color/lila"
+            android:textColor="@color/lila"
+            android:background="@null"
+            android:gravity="center"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            />-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/margin_100"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <!--//-->
+
+            <ImageView
+                android:id="@+id/imgMyLocation"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_my_location_black_24dp" />
+
+            <ImageView
+                android:id="@+id/add_place_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/margin_20"
+                android:scaleType="fitXY"
+                android:src="@drawable/add_place_icon" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bannerImage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner" />
+</FrameLayout>

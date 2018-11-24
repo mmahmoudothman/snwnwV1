@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/margin_90"
+            android:layout_height="@dimen/margin_90"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:src="@drawable/profile_defalut"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img_profile"
+            android:layout_marginTop="@dimen/margin_30"
+            android:layout_marginBottom="@dimen/margin_20"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:layout_alignTop="@+id/img_profile"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_50"
+            android:id="@+id/id_edit"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:layout_below="@+id/img_profile"
+            android:layout_above="@+id/save"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:orientation="vertical" >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/profile_view"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.snwnw.snwnw.presentation.ui.views.English_Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/save"
+            android:textSize="@dimen/margin_20"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_40"
+            android:textStyle="bold"
+            android:layout_below="@+id/resend_code"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/roundedbutton"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:id="@+id/save"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

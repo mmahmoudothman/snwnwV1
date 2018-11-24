@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.snwnw.snwnw.presentation.ui.views.English_Textview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="التعليقات"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_below="@+id/line1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:textColor="@color/lila"
+        android:textSize="@dimen/text_size_16"
+        android:id="@+id/address"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:id="@+id/allcomments"
+        >
+    </android.support.v7.widget.RecyclerView>
+    <com.snwnw.snwnw.presentation.ui.views.English_Textview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_below="@+id/allcomments"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_20"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/lila"
+        android:layout_marginTop="@dimen/margin_20"
+        android:visibility="gone"
+        android:text="@string/loadmore"
+        android:id="@+id/loadmore"
+        />
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

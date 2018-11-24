@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialRatingBar.RatingBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:id="@+id/rating_bar"
+            android:stepSize="1"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/rating_bar"
+            android:background="@drawable/round_edit_txt"
+            android:layout_margin="@dimen/margin_20"
+            android:id="@+id/ed_add_comment"
+            android:gravity="top|right"
+            android:padding="@dimen/margin_5"
+            android:textColor="@color/lila"
+            android:textSize="@dimen/text_size_16"
+            android:text=""
+            />
+        <com.snwnw.snwnw.presentation.ui.views.English_Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/send"
+            android:textSize="@dimen/margin_20"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/roundedbutton"
+            android:id="@+id/btn_send"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_below="@+id/ed_add_comment"
+            />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

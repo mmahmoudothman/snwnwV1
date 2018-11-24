@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_main"
+        title="@string/ic_home"
+        icon="@drawable/ic_home_black_24dp"
+
+        />
+    <tab
+        id="@+id/tab_fav"
+        title="@string/ic_myfave"
+        icon="@drawable/ic_format_list"
+        />
+    <tab
+        id="@+id/tab_search"
+        title="@string/ic_search"
+        icon="@drawable/ic_search_black_24dp"
+
+        />
+
+    <tab
+        id="@+id/tab_profile"
+        title="@string/ic_profile"
+        icon="@drawable/ic_account"
+
+        />
+
+    <tab
+        id="@+id/tab_offers"
+        title="@string/ic_add"
+        icon="@drawable/ic_sale"
+
+        />
+</tabs>
