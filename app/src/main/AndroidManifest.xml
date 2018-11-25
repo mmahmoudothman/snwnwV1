@@ -11,7 +11,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 
-
     <application
         android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
@@ -129,9 +128,9 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".presentation.ui.activities.AddEventActivity"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-
+        <activity
+            android:name=".presentation.ui.activities.AddEventActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
 
 
     </application>

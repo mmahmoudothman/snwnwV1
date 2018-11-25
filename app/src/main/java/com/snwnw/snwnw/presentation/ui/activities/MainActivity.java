@@ -80,7 +80,7 @@ public class MainActivity extends Activity implements LoginPresenterListener {
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FacebookSdk.setApplicationId("331504747646550");
+        FacebookSdk.setApplicationId(getString(R.string.facebook_app_id));
 //        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
